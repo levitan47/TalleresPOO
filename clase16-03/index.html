@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClasePoo16-03</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center items-center flex-col bg-[url(img/76YS.gif)]">
+    <div class=" justify-center flex flex-col items-center rounded-lg bg-gradient-to-r from-sky-400 to-indigo-400 w-[25rem] h-[25rem] mt-[5rem] border border-3 border-black">
+        <h1 class="text-3xl">Ingrese sus datos:</h1>
+        <Form id="submit" class="bg-white flex flex-col bg-gradient-to-r from-sky-400 to-indigo-400 mt-[2rem]">
+            <div class="bg-transparent flex flex-col">
+                <label class="bg-transparent" for="">Ingrese su nombre: </label>
+                <input class="border border-2 border-black" type="text" name="Nombre" id="nombre" placeholder="ingrese su nombre " required>
+            </div>
+            <div class="bg-transparent flex flex-col">
+                <label class="bg-transparent mt-[10px]" for="">Ingrese sus apellidos: </label>
+                <input class="border border-2 border-black" type="text" name="Apellidos" id="apellidos" placeholder="ingrese sus apellidos " required> 
+            </div>
+            <div class="bg-transparent flex flex-col">
+                <label class="bg-transparent mt-[10px]" for="">Ingrese su fecha de nacimiento: </label>
+                <input class="border border-2 border-black" type="date" name="FechaNacimiento" id="fechanacimiento" placeholder="ingrese su fecha de nacimiento " required>
+                
+            </div>
+            <div class="bg-transparent flex flex-col">
+                <label class="bg-transparent mt-[10px]" for="">Ingrese su cedula: </label>
+                <input class="border border-2 border-black"type="text" name="Cedula" id="cedula" placeholder="ingrese su cedula " required>
+            </div>
+            <div class="bg-transparent flex justify-center">
+                <button id="submit" class="border rounded-md border-black bg-sky-400 text-center mt-[2rem] w-[5rem]"  type="submit">Guardar</button>
+            </div>
+            
+        </Form>
+
+        <a class="border border-black bg-red-300 rounded-lg mt-1" href="felicidades.html">Ir a la otra pagina</a>
+    </div>
+    
+    <div class="mt-[2rem] w-[20.5rem]" >
+        <div class="bg-white ">
+
+            <table class="table-fixed bg-black text-white">
+                <tr class="flex flex-grow border border-white m-1">
+                    <th class="border border-white w-[10rem] ">Nombre Completo</th>
+                    <th class="border border-white w-[10rem]">¿Cumple años?</th>
+                </tr>
+                <tr class="flex flex-grow flex-wrap justify-center text-center m-1" id="ingresodatos"></tr>
+            </table>
+            </div>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
